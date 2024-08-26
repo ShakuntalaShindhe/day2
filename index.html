@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Daily Task day2</h4>
+</body>
+<script>
+    
+//Functions without Parameters
+//1.
+function greet(){
+  console.log('Hello world!')
+}
+greet()
+
+//2.
+function greet(name){
+  console.log('Welcome'+' '+name)
+}
+greet('Shakuntala')
+
+//Functions with Parameters
+function addNumbers(a,b){
+     console.log(a+b)
+}
+addNumbers(2,4)//6
+addNumbers(6,9)//15
+addNumbers(10,30)//40
+
+//Functions with Return Statements
+function multiplyNum(x,y){
+  return x*y
+}
+let multiply=multiplyNum(3,6)
+console.log('Multiplication is'+':'+multiply)
+
+
+//Combining Functions
+function RectangleArea(length,width){
+   return length*width
+
+}
+let multiply1=RectangleArea(2,4)
+console.log('Area of Rectangle is :'+multiply1)
+
+//Default Parameters:it gives a 1st preference to user if user did not passed any values 
+//then it will print the default one
+function greetUser(name='Guest'){
+  console.log('Hello'+' '+name+'!')
+}
+greetUser()
+greetUser('john')
+</script>
+</html>
